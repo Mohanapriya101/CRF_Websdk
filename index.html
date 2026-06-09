@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Customer Registration</title>
+
+    <style>
+        body{
+            background-color: skyblue;
+            font-family: Arial, sans-serif;
+        }
+
+        .form-container{
+            width: 400px;
+            margin: 100px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        input{
+            width: 90%;
+            padding: 10px;
+            margin: 10px 0;
+        }
+
+        button{
+            padding: 10px 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="form-container">
+
+    <h2>Customer Registration Form</h2>
+
+    <form id="registrationForm">
+
+        <input type="text"
+               id="firstName"
+               placeholder="First Name">
+
+        <input type="email"
+               id="email"
+               placeholder="Email">
+
+        <input type="text"
+               id="city"
+               placeholder="City">
+
+        <input type="tel"
+               id="phone"
+               placeholder="Phone Number">
+
+        <button type="submit"
+                id="registerBtn">
+            Register
+        </button>
+
+    </form>
+
+</div>
+
+</body>
+</html>
