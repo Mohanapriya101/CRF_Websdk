@@ -41,6 +41,7 @@
 
     <button id="addToCartBtn">
         Add To Cart
+        
     </button>
 
     <hr>
@@ -72,11 +73,8 @@
 
     </form>
 </div>
-
-<script>
-document.getElementById("addToCartBtn").addEventListener("click", function () {
-
-    alert("Laptop added to cart");
+    <script>
+document.getElementById("addToCartBtn").addEventListener("click", function() {
 
     alloy("sendEvent", {
         xdm: {
@@ -84,14 +82,17 @@ document.getElementById("addToCartBtn").addEventListener("click", function () {
             productListItems: [{
                 name: "Laptop",
                 SKU: "LP1001",
-                priceTotal: 50000,
-                quantity: 1
+                quantity: 1,
+                priceTotal: 50000
             }]
         }
     });
 
+    console.log("Laptop added to cart");
+
 });
 </script>
+
 
 </body>
 </html>
