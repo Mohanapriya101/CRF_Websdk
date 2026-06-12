@@ -74,5 +74,30 @@
 
 </div>
 
+<script>
+
+document.getElementById("addToCartBtn").addEventListener("click", function () {
+
+    alloy("sendEvent", {
+        xdm: {
+            eventType: "commerce.productListAdds",
+            productListItems: [{
+                name: "Laptop",
+                SKU: "LP1001",
+                priceTotal: 50000,
+                quantity: 1
+            }]
+        }
+    });
+
+    console.log("Laptop added to cart");
+
+});
+
+</script>
+
+</body>
+</html>
+
 </body>
 </html>
