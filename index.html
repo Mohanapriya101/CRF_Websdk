@@ -71,12 +71,12 @@
         </button>
 
     </form>
-
 </div>
 
 <script>
-
 document.getElementById("addToCartBtn").addEventListener("click", function () {
+
+    alert("Laptop added to cart");
 
     alloy("sendEvent", {
         xdm: {
@@ -90,10 +90,7 @@ document.getElementById("addToCartBtn").addEventListener("click", function () {
         }
     });
 
-    console.log("Laptop added to cart");
-
 });
-
 </script>
 
 </body>
